@@ -1,6 +1,6 @@
 class Joke
 
-    attr_accessor :punchline
+    attr_accessor :setup :delivery
 
 
 end
