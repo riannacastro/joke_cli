@@ -1,0 +1,3 @@
+#!/users/bin/env ruby
+
+require_relative '../environment.rb'
