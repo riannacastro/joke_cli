@@ -18,12 +18,11 @@ class CLI
     end
 
      def choices
-        selection = user_input
-        if selection == "yes"
+        choice = user_input
+        if choice == "yes"
             #print jokes
             print_jokes
-            choices
-        elsif selection == "exit"
+        elsif choice == "exit"
             puts goodbye
 
         else
@@ -45,9 +44,19 @@ class CLI
         jokes.each.with_index(1) do |joke, index|
             puts "#{index}. #{joke}"
         end
+        select_joke
     end
-    
 
+    def select_joke
+        puts "Please enter the topic of a joke you would like to hear."
+        choice = user_input
+        joke_from_topic(choice)
+    end
+
+    def joke_from_topic(joke)
+        puts "#{joke}"
+        choices
+    end
 
 
 
