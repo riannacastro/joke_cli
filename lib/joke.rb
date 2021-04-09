@@ -1,12 +1,13 @@
 class Joke
 
-    attr_accessor :setup, :delivery
+    attr_accessor :setup, :delivery, :category
 
     @@all = []
 
-    def initialize(setup, delivery)
+    def initialize(setup, delivery, category)
         @setup = setup
         @delivery = delivery
+        @category = category
         save
     
     end

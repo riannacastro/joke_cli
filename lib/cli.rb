@@ -3,7 +3,7 @@ class CLI
 
     def start
         puts "Hello! We are the Jokesters! What is your name?" 
-        API.get_data
+        #API.get_data
         input = user_input
         greeting(input)
 

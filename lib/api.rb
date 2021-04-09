@@ -1,8 +1,12 @@
 class API 
     
-    def self.get_data
-       response = RestClient.get("https://v2.jokeapi.dev/joke/Programming,Miscellaneous,Pun,Christmas?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single")
+     def self.get_data
+        response = RestClient.get("https://v2.jokeapi.dev/joke/Programming,Pun?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=twopart&amount=10")
+         jokes_array = JSON.parse(response)["jokes"]   
+         # binding.pry
+        jokes_array.each do |joke|
+            Joke.new(joke["setup"], joke["delivery"], joke["category"])
+        end
         binding.pry
-        jokes_array = JSON.parse(response)
-    end
+     end
 end
