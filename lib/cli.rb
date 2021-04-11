@@ -48,7 +48,7 @@ class CLI
     end
 
     def select_joke
-        puts "Please enter the topic of a joke you would like to hear."
+        puts "Please enter the topic of a joke you would like to hear. Type \"exit\" to exit."
         choice = user_input
         joke_from_topic(choice)
     end
