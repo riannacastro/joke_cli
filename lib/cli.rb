@@ -3,7 +3,7 @@ class CLI
 
     def start
         puts "Hello! We are the Jokesters! What is your name?" 
-        #API.get_data
+        API.get_data
         input = user_input
         greeting(input)
 
@@ -41,8 +41,7 @@ class CLI
      end
 
      def print_jokes
-        jokes = ["Programming", "Pun"]
-        jokes.each.with_index(1) do |joke, index|
+        Joke.all.each.with_index(1) do |joke, index|
             puts "#{index}. #{joke}"
         end
         select_joke
