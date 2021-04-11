@@ -7,6 +7,6 @@ class API
         jokes_array.each do |joke|
             Joke.new(joke["setup"], joke["delivery"], joke["category"])
         end
-        binding.pry
+        #binding.pry
      end
 end

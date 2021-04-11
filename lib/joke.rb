@@ -4,10 +4,12 @@ class Joke
 
     @@all = []
 
-    def initialize(setup, delivery, category)
-        @setup = setup
-        @delivery = delivery
-        @category = category
+    def initialize(joke_hash)
+        joke_hash.each do |key, value|
+            self.send("#{key}=", value)
+        end
+        binding.pry
+
         save
     
     end

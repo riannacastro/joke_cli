@@ -41,7 +41,7 @@ class CLI
      end
 
      def print_jokes
-        jokes = ["Christmas", "Programming", "Pun", "Misc"]
+        jokes = ["Programming", "Pun"]
         jokes.each.with_index(1) do |joke, index|
             puts "#{index}. #{joke}"
         end
