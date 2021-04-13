@@ -13,6 +13,14 @@ class Joke
     
     end
 
+    def self.find_joke(joke_category)
+        Joke.all.find do |joke|
+        joke.category == joke_category
+        end
+
+    end
+
+
     def save
         @@all << self
     end

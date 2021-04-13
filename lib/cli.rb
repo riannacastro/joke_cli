@@ -41,7 +41,9 @@ class CLI
      end
 
      def print_jokes
-        Joke.all.each.with_index(1) do |joke, index|
+        joke = Joke.all.uniq{|joke| joke.category}
+    
+        joke.each.with_index(1) do |joke, index|
             puts "#{index}. #{joke.category}" # want to print category of jokes here???
         end
         #binding.pry
@@ -55,7 +57,8 @@ class CLI
     end
 
     def joke_from_topic(joke)
-        puts "#{joke}" 
+      pick_joke = Joke.find_joke(joke)
+      puts pick_joke.setup
         choices
     end
 

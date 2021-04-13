@@ -5,6 +5,7 @@ class API
          jokes_array = JSON.parse(response)["jokes"]   
          # binding.pry
         jokes_array.each do |joke|
+            #binding.pry
             Joke.new(joke)
         end
         #binding.pry
