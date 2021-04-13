@@ -42,7 +42,7 @@ class CLI
 
      def print_jokes
         Joke.all.each.with_index(1) do |joke, index|
-            puts "#{index}. #{joke[:category]}" # want to print category of jokes here???
+            puts "#{index}. #{joke.category}" # want to print category of jokes here???
         end
         #binding.pry
         select_joke
@@ -55,7 +55,7 @@ class CLI
     end
 
     def joke_from_topic(joke)
-        puts "#{joke[:category]}" #puts category here?
+        puts "#{joke}" 
         choices
     end
 
