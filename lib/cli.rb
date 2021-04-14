@@ -14,7 +14,7 @@ class CLI
     end
 
     def greeting(name)
-        puts "Nice to meet you, #{name}! Would you like to hear a joke? Enter \"yes\" to see list or \"exit\" to quit."
+        puts "Nice to meet you, #{name}! Would you like to hear a joke? Enter \"yes\" to see category list or \"exit\" to quit."
         choices
     end
 
@@ -62,14 +62,42 @@ class CLI
         puts "press \"?\" to continue."
        # if i type an invalid response it won't let me put the correct "?" (will continue to say invalid)
         if chooses == true
-             puts "\"#{pick_joke.delivery}\""
-            # puts "Would you like to hear another joke? Type a category from the list or type \"exit\" to exit."
-            # print_jokes
+             puts "\"#{pick_joke.delivery}\" Type \"haha\" to continue."
+             haha_continue
+            # new_joke
         else 
-        chooses # Want to be able to put  "?" and get delivery
+        puts invalid 
+        end
+    end
+
+    def haha_continue
+        continue = user_input
+        if continue == "haha"
+            new_joke
+        else
+            puts "Type \"haha\" to continue."
         end
 
     end
+
+
+    def new_joke
+        puts "Would you like to hear another joke? Type \"yes\" to see list or \"exit\" to exit."
+        another_joke
+
+    end
+
+    def another_joke
+        choice = user_input
+        if choice == "yes"
+            print_jokes
+        elsif choice == "exit"
+            else
+                puts "Please enter a valid response."
+            end
+
+    end
+
 
      def chooses
         choice = user_input
