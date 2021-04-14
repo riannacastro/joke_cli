@@ -21,7 +21,6 @@ class CLI
      def choices
         choice = user_input
         if choice == "yes"
-            #print jokes
             print_jokes
         elsif choice == "exit"
             puts goodbye
@@ -36,7 +35,7 @@ class CLI
      end
 
      def invalid
-        puts "sorry... please choose a valid response."
+        puts "sorry... please choose yes to see categories or exit to exit."
         choices
      end
 
@@ -52,52 +51,36 @@ class CLI
     def select_joke
         puts "Please enter the topic of a joke you would like to hear. Type \"exit\" to exit."
         choice = user_input
+        if choice == "exit"
+            goodbye
+        else
         joke_from_topic(choice)
+        end
     
     end
 
     def joke_from_topic(joke)
       pick_joke = Joke.find_joke(joke)
+      if pick_joke != nil
+
         puts "\"#{pick_joke.setup}\"" 
         puts "press \"?\" to continue."
        # if i type an invalid response it won't let me put the correct "?" (will continue to say invalid)
         if chooses == true
-             puts "\"#{pick_joke.delivery}\" Type \"haha\" to continue."
-             haha_continue
+             puts "\"#{pick_joke.delivery}\""
+             puts "Would you like to hear another joke? Type \"yes\" to see list or \"exit\" to exit."
+             Joke.all.clear
+             API.get_data
+             choices
             # new_joke
         else 
         puts invalid 
         end
+    else
+        invalid 
     end
 
-    def haha_continue
-        continue = user_input
-        if continue == "haha"
-            new_joke
-        else
-            puts "Type \"haha\" to continue."
-        end
-
     end
-
-
-    def new_joke
-        puts "Would you like to hear another joke? Type \"yes\" to see list or \"exit\" to exit."
-        another_joke
-
-    end
-
-    def another_joke
-        choice = user_input
-        if choice == "yes"
-            print_jokes
-        elsif choice == "exit"
-            else
-                puts "Please enter a valid response."
-            end
-
-    end
-
 
      def chooses
         choice = user_input
