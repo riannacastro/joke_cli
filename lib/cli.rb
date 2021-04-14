@@ -58,10 +58,13 @@ class CLI
 
     def joke_from_topic(joke)
       pick_joke = Joke.find_joke(joke)
-        puts pick_joke.setup
+        puts "\"#{pick_joke.setup}\"" 
+        puts "press \"?\" to continue."
        # if i type an invalid response it won't let me put the correct "?" (will continue to say invalid)
         if chooses == true
-             puts pick_joke.delivery
+             puts "\"#{pick_joke.delivery}\""
+            # puts "Would you like to hear another joke? Type a category from the list or type \"exit\" to exit."
+            # print_jokes
         else 
         chooses # Want to be able to put  "?" and get delivery
         end
