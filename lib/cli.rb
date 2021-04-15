@@ -65,14 +65,12 @@ class CLI
 
         puts "\"#{pick_joke.setup}\"" 
         puts "press \"?\" to continue."
-       # if i type an invalid response it won't let me put the correct "?" (will continue to say invalid)
         if chooses == true
              puts "\"#{pick_joke.delivery}\""
              puts "Would you like to hear another joke? Type \"yes\" to see list or \"exit\" to exit."
              Joke.all.clear
              API.get_data
              choices
-            # new_joke
         else 
         puts invalid 
         end
@@ -90,11 +88,6 @@ class CLI
         puts invalid
         end
     end
-
-
-
-
-
 
 
 end
