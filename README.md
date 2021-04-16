@@ -29,5 +29,5 @@ The program will then ask the user if they would like to see a list of jokes. Th
 
 ## Contributing 
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/joke_cli. This project is intended to be a safe, welcoming space for collaboration, and release, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
+Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/joke_cli. This project is intended to be a safe, welcoming space for collaboration, and all contributers must follow the [code of conduct](https://github.com/[USERNAME]/joke_cli/blob/master/CODE_OF_CONDUCT.md)
 
