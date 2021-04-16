@@ -14,7 +14,7 @@ To run the program:
 
 ## Usage
 
-Start by typing ruby bin/run
+Start by typing `ruby bin/run`
 
 Once the welcome message appears, it will ask the user to type their name. 
 
@@ -34,3 +34,7 @@ Bug reports and pull requests are welcome on GitHub at https://github.com/[USERN
 ## License
 
 The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+
+## Code of Conduct
+
+Everyone interacting in the JokeCli project's codebases, issue trackers, chat rooms and mailing lists is expected to follow the [code of conduct](https://github.com/[USERNAME]/joke_cli/blob/master/CODE_OF_CONDUCT.md).
