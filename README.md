@@ -5,9 +5,11 @@ Welcome to the Joksters CLI! This CLI allows you to hear a two-part joke from on
 ## Installation
 
 To install it yourself:
+
 ```$ gem install joke_cli```
 
 To run the program:
+
 ```$ ruby bin/run```
 
 ## Usage
@@ -25,5 +27,7 @@ The program will then ask the user if they would like to see a list of jokes. Th
 
     - If the user typed "exit", an exit message will appear and you will be exited out of the CLI.
 
+## Contributing 
 
+Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/joke_cli. This project is intended to be a safe, welcoming space for collaboration, and release, which will create a git tag for the version, push git commits and the created tag, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
