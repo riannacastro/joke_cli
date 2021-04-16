@@ -20,12 +20,12 @@ Once the welcome message appears, it will ask the user to type their name.
 
 The program will then ask the user if they would like to see a list of jokes. The user will be asked to type "yes" to see the category list, or "exit" to exit.
 
-    - If the user typed "yes", the category list will be printed out. 
+ *  If the user typed "yes", the category list will be printed out. 
     The user will need to type the desired joke category to view the first part of the joke. 
     To view the second part of the joke, the user will be asked to type "?".
     The user has the option to choose from the category list again, or  to exit.
 
-    - If the user typed "exit", an exit message will appear and you will be exited out of the CLI.
+ *  If the user typed "exit", an exit message will appear and you will be exited out of the CLI.
 
 ## Contributing 
 
