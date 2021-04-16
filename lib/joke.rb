@@ -20,7 +20,6 @@ class Joke
 
     end
 
-
     def save
         @@all << self
     end
@@ -28,9 +27,5 @@ class Joke
     def self.all
         @@all
     end
-
-
-
-
 
 end

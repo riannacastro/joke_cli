@@ -1,5 +1,4 @@
 class CLI
-# binding.pry
 
     def start
         puts "Hello! We are the Jokesters! What is your name?" 
