@@ -29,5 +29,8 @@ The program will then ask the user if they would like to see a list of jokes. Th
 
 ## Contributing 
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/joke_cli. This project is intended to be a safe, welcoming space for collaboration, and all contributers must follow the [code of conduct](https://github.com/[USERNAME]/joke_cli/blob/master/CODE_OF_CONDUCT.md)
+Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/joke_cli. This project is intended to be a safe, welcoming space for collaboration, and all contributers must follow the [code of conduct](https://github.com/[USERNAME]/joke_cli/blob/master/CODE_OF_CONDUCT.md).
 
+## License
+
+The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
